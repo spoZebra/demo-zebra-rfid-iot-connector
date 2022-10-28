@@ -1,0 +1,15 @@
+{
+  "name": "demo-zebra-rfid-iot-http-post",
+  "version": "1.0.0",
+  "description": "DEMO",
+  "main": "http-client-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Simone Pozzobon",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "https": "^1.0.0"
+  }
+}

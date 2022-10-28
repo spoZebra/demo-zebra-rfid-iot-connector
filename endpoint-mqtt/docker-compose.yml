@@ -1,0 +1,14 @@
+version: "1"
+
+services:
+  mosquitto:
+      image: eclipse-mosquitto:latest
+      container_name: demo-zebra-rfid-iot-connector-mosquitto
+      restart: always
+      volumes:
+        - ./mosquitto/mosquitto.conf:/mosquitto/config/mosquitto.conf:rw
+      ports:
+        - 1883:1883
+        - 9001:9001   
+      # Make mosquitto reachable from outside (FX reader)
+      hostname: "$host_name"
